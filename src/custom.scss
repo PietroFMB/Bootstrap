@@ -1,0 +1,32 @@
+// 1. Primero importa funciones y variables de Bootstrap
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+
+// 2. Luego sobreescribe variables con las tuyas personalizadas
+$accordion-padding-y:                     1rem;
+$accordion-padding-x:                     1.25rem;
+$accordion-color:                    var(--#{$prefix}body-color);
+$accordion-bg:                       var(--#{$prefix}body-bg);
+
+$carousel-indicator-width:          30px;
+$carousel-indicator-height:         3px;
+$carousel-control-hover-opacity:    .9;
+$carousel-control-transition:       opacity .15s ease;
+
+$navbar-brand-font-size:            $font-size-lg;
+$navbar-toggler-font-size:          $font-size-lg;
+$navbar-toggler-border-radius:      $btn-border-radius;
+$navbar-toggler-focus-width:        $btn-focus-width;
+
+$card-inner-border-radius:          subtract($card-border-radius, $card-border-width);
+$card-cap-padding-y:                $card-spacer-y * .5;
+$card-title-spacer-y:               $spacer * .5;
+$card-title-color:                  null;
+$card-subtitle-color:               null;
+
+// 3. Finalmente importa Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
